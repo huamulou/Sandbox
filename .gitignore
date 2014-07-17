@@ -1,4 +1,4 @@
-**/.idea/*
+*/.idea/*.*
 *.iws
 *.iml
 .settings
@@ -10,7 +10,7 @@ out/*
 *.swp
 test/*
 .DS_Store
-*.class
+#*.class
 
 
 #################

@@ -1,4 +1,4 @@
-scala4impatient/.idea/*.*
+.idea/*
 *.iws
 *.iml
 .settings

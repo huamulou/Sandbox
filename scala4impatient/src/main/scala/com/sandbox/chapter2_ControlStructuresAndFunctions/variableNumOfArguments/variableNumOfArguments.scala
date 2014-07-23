@@ -14,7 +14,7 @@ object variableNumOfArguments {
     }
 
     val s = sum(1, 4, 9, 16, 25)
-    println(s)
+    println(s)    // 55
 
     /**
      *    it is incorrect if you set a Range type: val s2 = sum(1 to 5) , because it will be recognized as a single
@@ -22,14 +22,14 @@ object variableNumOfArguments {
      *    you should append :_* to tell the compiler this argument is Seq type
      * */
     val s2 = sum(1 to 5: _*)
-    println(s2)
+    println(s2)    // 15
 
     def recursiveSum(args: Int*) : Int = {
       if (args.length == 0) 0
       else args.head + recursiveSum(args.tail : _*)
     }
 
-    println(recursiveSum(1, 4, 9, 16, 25))
+    println(recursiveSum(1, 4, 9, 16, 25))    // 55
 
     import java.text.MessageFormat
 
@@ -40,6 +40,6 @@ object variableNumOfArguments {
      * */
     val str = MessageFormat.format("The answer to {0} is {1}", "everything",
       42.asInstanceOf[AnyRef])
-    println(str)
+    println(str)   // The answer to everything is 42
   }
 }

@@ -1,4 +1,4 @@
-package com.sandbox.chapter1.declareValAndVar
+package com.sandbox.chapter1_TheBasics.declareValAndVar
 
 /**
  * Created by Jolin&Vash on 2014/7/19.

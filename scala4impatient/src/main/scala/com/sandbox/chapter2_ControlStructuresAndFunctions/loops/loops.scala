@@ -1,4 +1,4 @@
-package com.sandbox.chapter2.loops
+package com.sandbox.chapter2_ControlStructuresAndFunctions.loops
 
 /**
  * Created by jin1 on 2014/7/21.

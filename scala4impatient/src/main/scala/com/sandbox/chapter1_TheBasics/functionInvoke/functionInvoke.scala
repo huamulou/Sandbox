@@ -1,4 +1,4 @@
-package com.sandbox.chapter1.functionInvoke
+package com.sandbox.chapter1_TheBasics.functionInvoke
 import scala.math._
 
 

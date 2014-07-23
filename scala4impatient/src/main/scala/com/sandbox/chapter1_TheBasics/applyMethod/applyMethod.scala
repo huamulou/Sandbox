@@ -1,4 +1,4 @@
-package com.sandbox.chapter1.applyMethod
+package com.sandbox.chapter1_TheBasics.applyMethod
 
 /**
  * Created by jin1 on 2014/7/21.

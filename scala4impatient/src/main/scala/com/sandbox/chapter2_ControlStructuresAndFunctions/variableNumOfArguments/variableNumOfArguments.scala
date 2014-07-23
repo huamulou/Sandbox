@@ -1,4 +1,4 @@
-package com.sandbox.chapter2.variableNumOfArguments
+package com.sandbox.chapter2_ControlStructuresAndFunctions.variableNumOfArguments
 
 /**
  * Created by Jolin&Vash on 2014/7/21.

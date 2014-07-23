@@ -1,4 +1,4 @@
-package com.sandbox.chapter2.blockExpAndEvalute
+package com.sandbox.chapter2_ControlStructuresAndFunctions.blockExpAndEvalute
 import scala.math._
 /**
  * Created by jin1 on 2014/7/21.

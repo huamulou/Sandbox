@@ -1,4 +1,4 @@
-package com.sandbox.chapter1.primitiveClass
+package com.sandbox.chapter1_TheBasics.primitiveClass
 
 /**
  * Created by Jolin&Vash on 2014/7/19.

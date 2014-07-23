@@ -1,4 +1,4 @@
-package com.sandbox.chapter2.function
+package com.sandbox.chapter2_ControlStructuresAndFunctions.function
 
 /**
  * Created by Jolin&Vash on 2014/7/21.

@@ -1,4 +1,4 @@
-package com.sandbox.chapter2.defaultAndNamedArguments
+package com.sandbox.chapter2_ControlStructuresAndFunctions.defaultAndNamedArguments
 
 /**
  * Created by Jolin&Vash on 2014/7/21.

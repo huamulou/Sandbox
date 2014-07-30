@@ -29,5 +29,13 @@ object loops {
       println(ch)
     }
 
+    import scala.util.control.Breaks._
+    breakable {
+      for (ch <- "Hello World") {
+        if (ch == ' ') break; // Exits the breakable block
+        println(ch)
+      }
+    }
+
   }
 }

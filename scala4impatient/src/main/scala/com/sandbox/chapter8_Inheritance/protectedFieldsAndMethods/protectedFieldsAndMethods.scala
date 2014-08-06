@@ -10,6 +10,12 @@ object protectedFieldsAndMethods {
     var fred = new Manager
     fred.setAge(50)
     fred.setSalary(100000)
+    /**
+     * Since the id's modifier is protected which can't accessed in different package
+     * but the sub-class instead, the following doesn't work:
+     *      println(fred.id)
+     * */
+
     var wilma = new Manager
     wilma.setAge(55)
     wilma.setSalary(90000)

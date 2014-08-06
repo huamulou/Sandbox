@@ -1,4 +1,4 @@
-package com.sandbox.chapter8_Inheritance.protectedFieldsAndMethods
+package com.sandbox.chapter8_Inheritance.protectedFieldsAndMethods.employee
 
 /**
  * Created by jin1 on 2014/8/6.

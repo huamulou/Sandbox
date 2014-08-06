@@ -1,6 +1,6 @@
 package com.sandbox.chapter8_Inheritance.protectedFieldsAndMethods.employee
 
-import com.sandbox.chapter8_Inheritance.protectedFieldsAndMethods.Person
+import com.sandbox.chapter8_Inheritance.protectedFieldsAndMethods.employee.Person
 
 /**
  * Created by jin1 on 2014/8/6.

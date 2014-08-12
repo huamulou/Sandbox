@@ -7,20 +7,27 @@ import scala.io.Source
  */
 object readingLines {
   def main(args: Array[String]) {
-    val source = Source.fromFile("src/main/mary.txt", "UTF-8")
+    val source1 = Source.fromFile("src/main/mary.txt", "UTF-8")
+    val source2 = Source.fromFile("src/main/mary.txt", "UTF-8")
+    val source3 = Source.fromFile("src/main/mary.txt", "UTF-8")
     try {
-      val lineIterator = source.getLines
+      val lineIterator = source1.getLines
 
       for (l <- lineIterator)
         println(if (l.length <= 13) l else l.substring(0, 10) + "...")
 
       println("===================================================")
-      val lines = Source.fromFile("mary.txt", "UTF-8").getLines.toArray
+      val lines = source2.getLines.toArray.mkString("\n")
+      println(lines)
 
-      val contents = Source.fromFile("mary.txt", "UTF-8").mkString
+      println("===================================================")
+      val contents = source3.mkString
+      println(contents)
 
     }finally{
-      source.close()
+      source1.close()
+      source2.close()
+      source3.close()
     }
 
 

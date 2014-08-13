@@ -7,13 +7,14 @@ import scala.io.Source
  */
 object readingTokensAndNumbers {
   def main(args: Array[String]) {
-    val source2 = Source.fromFile("src/main/values.txt", "UTF-8")
-    val tokens = source2.mkString.split("\\s+")
-    println(tokens.getClass.getName)
+    val source = Source.fromFile("src/main/values.txt", "UTF-8")
+    val tokens = source.mkString.split("\\s+")
 
     val numbers = tokens.map(_.toDouble)
 //    val numbers = for (w <- tokens) yield w.toDouble
     println("Sum: " + numbers.sum)
+
+    source.close()
 
     print("How old are you? ")
     val age = readInt()

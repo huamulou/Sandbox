@@ -24,7 +24,7 @@ object serialization {
     //mutate the fred object before serialization
     fred.friends += vash
     println(fred.description)
-    
+
     val in = new ObjectInputStream(new FileInputStream("test.obj"))
     val savedFred = in.readObject().asInstanceOf[Person]
     in.close()

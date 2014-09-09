@@ -1,4 +1,4 @@
-package com.sandbox.chapter12_higherOrderFunctions.controlAbstractions
+package com.sandbox.chapter12_HigherOrderFunctions.controlAbstractions
 
 /**
  * Created by jin1 on 2014/9/5.

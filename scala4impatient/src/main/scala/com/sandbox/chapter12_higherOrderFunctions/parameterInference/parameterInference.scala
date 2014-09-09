@@ -1,4 +1,4 @@
-package com.sandbox.chapter12_higherOrderFunctions.parameterInference
+package com.sandbox.chapter12_HigherOrderFunctions.parameterInference
 
 /**
  * Created by jin1 on 2014/9/4.
@@ -24,7 +24,7 @@ object parameterInference {
 
     val fun2 = 3 * (_: Double) // OK
     println(fun2(0.25))  // 0.75
-    println(fun2.getClass.getName)  // com.sandbox.chapter12_higherOrderFunctions.parameterInference.parameterInference$$anonfun$5
+    println(fun2.getClass.getName)  // com.sandbox.chapter12_HigherOrderFunctions.parameterInference.parameterInference$$anonfun$5
 
     val fun3: (Double) => Double = 3 * _ // OK
     println(fun3(0.25))  // 0.75

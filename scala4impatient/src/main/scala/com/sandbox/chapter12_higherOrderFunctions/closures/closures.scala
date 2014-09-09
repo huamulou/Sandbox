@@ -1,4 +1,4 @@
-package com.sandbox.chapter12_higherOrderFunctions.closures
+package com.sandbox.chapter12_HigherOrderFunctions.closures
 
 /**
  * Created by jin1 on 2014/9/4.

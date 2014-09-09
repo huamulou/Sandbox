@@ -1,4 +1,4 @@
-package com.sandbox.chapter12_higherOrderFunctions.theReturnExpression
+package com.sandbox.chapter12_HigherOrderFunctions.theReturnExpression
 
 /**
  * Created by Jolin&Vash on 2014/9/9.

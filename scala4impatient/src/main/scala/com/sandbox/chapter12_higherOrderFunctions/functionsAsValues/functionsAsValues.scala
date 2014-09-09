@@ -1,4 +1,4 @@
-package com.sandbox.chapter12_higherOrderFunctions.functionsAsValues
+package com.sandbox.chapter12_HigherOrderFunctions.functionsAsValues
 
 import scala.math._
 /**

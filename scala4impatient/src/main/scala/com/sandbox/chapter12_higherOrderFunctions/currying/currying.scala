@@ -1,4 +1,4 @@
-package com.sandbox.chapter12_higherOrderFunctions.currying
+package com.sandbox.chapter12_HigherOrderFunctions.currying
 
 /**
  * Created by jin1 on 2014/9/5.

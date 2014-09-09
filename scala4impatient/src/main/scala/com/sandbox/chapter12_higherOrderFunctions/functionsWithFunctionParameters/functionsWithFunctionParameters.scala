@@ -1,4 +1,4 @@
-package com.sandbox.chapter12_higherOrderFunctions.functionsWithFunctionParameters
+package com.sandbox.chapter12_HigherOrderFunctions.functionsWithFunctionParameters
 
 import scala.math._
 

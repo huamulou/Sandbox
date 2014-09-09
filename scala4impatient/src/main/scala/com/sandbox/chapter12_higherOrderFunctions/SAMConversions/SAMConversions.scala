@@ -1,4 +1,4 @@
-package com.sandbox.chapter12_higherOrderFunctions.SAMConversions
+package com.sandbox.chapter12_HigherOrderFunctions.SAMConversions
 
 import java.awt.event.{ActionListener, ActionEvent}
 import javax.swing.{JFrame, JButton}

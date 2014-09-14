@@ -8,7 +8,8 @@ object currying {
     def mul(x: Int, y: Int) = x * y
 
     // function after currying
-    def mulOneAtATime(x: Int)(y: Int) = x * y  // equals to "def mulOneAtATime(x: Int) = (y: Int) => x * y"
+    // equals to def mulOneAtATime(x: Int)(y: Int) = x * y
+    def mulOneAtATime(x: Int) = (y: Int) => x * y
     val v1 = mulOneAtATime(6)(7)
     println(v1)
 

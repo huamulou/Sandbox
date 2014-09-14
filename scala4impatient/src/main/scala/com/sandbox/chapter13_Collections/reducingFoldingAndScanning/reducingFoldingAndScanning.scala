@@ -11,28 +11,29 @@ object reducingFoldingAndScanning {
 
     List(1, 7, 2, 9).foldLeft(0)(_ - _)  // 0 - 1 - 7 - 2 - 9 = -19
 
-    val rv = List(1, 7, 2, 9).foldLeft("")(_ + _)
-    println(rv)  // 1729
+    val rv1 = List(1, 7, 2, 9).foldLeft("")(_ + _)
+    println("rv1 " + rv1)  // 1729
 
-    (0 /: List(1, 7, 2, 9))(_ - _)  //  is equivalent to foldLeft
+    val rv2 =  ("" /: List(1, 7, 2, 9))((_1,_2) => _1 + _2)  //  is equivalent to foldLeft
+    println("rv2 " + rv2)  // 1729
 
     val freq = scala.collection.mutable.Map[Char, Int]()
     for (c <- "Mississippi")
       freq(c) = freq.getOrElse(c, 0) + 1
     println(freq.mkString(","))  // M -> 1,s -> 4,p -> 2,i -> 4
 
+    // Map()
+    // Map(M -> 1)
+    // Map(M -> 1, i -> 1)
+    // Map(M -> 1, i -> 1, s -> 1)
+    // Map(M -> 1, i -> 1, s -> 2)
+    // Map(M -> 1, i -> 2, s -> 2)
+    // Map(M -> 1, i -> 2, s -> 3)
+    // Map(M -> 1, i -> 2, s -> 4)
+    // Map(M -> 1, i -> 3, s -> 4)
+    // Map(M -> 1, i -> 3, s -> 4, p -> 1)
+    // Map(M -> 1, i -> 3, s -> 4, p -> 2)
     val anotherFreq = (Map[Char, Int]() /: "Mississippi") {
-       // Map()
-       // Map(M -> 1)
-       // Map(M -> 1, i -> 1)
-       // Map(M -> 1, i -> 1, s -> 1)
-       // Map(M -> 1, i -> 1, s -> 2)
-       // Map(M -> 1, i -> 2, s -> 2)
-       // Map(M -> 1, i -> 2, s -> 3)
-       // Map(M -> 1, i -> 2, s -> 4)
-       // Map(M -> 1, i -> 3, s -> 4)
-       // Map(M -> 1, i -> 3, s -> 4, p -> 1)
-       // Map(M -> 1, i -> 3, s -> 4, p -> 2)
       (m, c) => {println(m);m + (c -> (m.getOrElse(c, 0) + 1))}
     }
     println(anotherFreq.mkString(","))  // M -> 1,i -> 4,s -> 4,p -> 2

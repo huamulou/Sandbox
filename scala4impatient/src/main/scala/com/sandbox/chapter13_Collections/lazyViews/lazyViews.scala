@@ -9,12 +9,15 @@ object lazyViews {
 
     val powers1 = (0 until 1000).view.map(pow(10, _))
 
-    powers1(100)
+    println("power1 " + powers1(100))  // power1 1.0E100
 
     val powers2 = (0 until 1000).view.map(n => { println(n) ; pow(10, n) })
 
-    powers2(100) // Prints 100 in the method call
-    powers2(100) // Prints 100 again; the method is called twice
+    // Prints 100 in the method call
+    println("power2 " + powers2(100))  // power2 1.0E100
+
+    // Prints 100 again; the method is called twice
+    println("power2 " + powers2(100))   // power2 1.0E100
 
     // Contrast with streams
 
@@ -26,7 +29,8 @@ object lazyViews {
 
     (0 to 1000).map(pow(10, _)).map(1 / _)
 
-    (0 to 1000).view.map(pow(10, _)).map(1 / _).force
+    val list2 = (0 to 1000).view.map(pow(10, _)).map(1 / _).force
+    println("list2 " + list2.mkString(","))  // list2 1.0,0.1,0.01,0.001,1.0E-4,1.0E-5,1.0E-6,1.0E-7,1.0E-8,...............
 
     (0 to 1000).map(x => pow(10, -x))
   }

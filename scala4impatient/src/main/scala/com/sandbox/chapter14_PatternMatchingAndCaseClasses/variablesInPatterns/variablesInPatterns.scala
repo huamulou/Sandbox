@@ -1,4 +1,4 @@
-package com.sandbox.patternMatchingAndCaseClasses.variablesInPatterns
+package com.sandbox.chapter14_PatternMatchingAndCaseClasses.variablesInPatterns
 
 /**
  * Created by Jolin&Vash on 2014/9/17.

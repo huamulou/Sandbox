@@ -1,4 +1,4 @@
-package com.sandbox.patternMatchingAndCaseClasses.guards
+package com.sandbox.chapter14_PatternMatchingAndCaseClasses.guards
 
 /**
  * Created by Jolin&Vash on 2014/9/17.

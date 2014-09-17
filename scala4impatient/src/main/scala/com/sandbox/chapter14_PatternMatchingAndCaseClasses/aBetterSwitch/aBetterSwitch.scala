@@ -1,4 +1,4 @@
-package com.sandbox.patternMatchingAndCaseClasses.aBetterSwitch
+package com.sandbox.chapter14_PatternMatchingAndCaseClasses.aBetterSwitch
 
 /**
  * Created by Jolin&Vash on 2014/9/16.

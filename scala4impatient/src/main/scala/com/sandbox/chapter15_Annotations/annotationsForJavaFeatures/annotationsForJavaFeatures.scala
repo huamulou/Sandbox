@@ -5,6 +5,6 @@ package com.sandbox.chapter15_Annotations.annotationsForJavaFeatures
  */
 object annotationsForJavaFeatures {
   def main(args: Array[String]) {
-    
+
   }
 }

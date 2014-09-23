@@ -30,14 +30,17 @@ object variance3 {
 
     // A unary function has variance Function1[-A, +R]
 
-    def friends(students: Array[Student3], find: Function1[Student3, Person3]) =
-      for (s <- students) yield find(s)
-
-    def friends(students: Array[Student3], find: Student3 => Person3]) =
-    for (s <- students) yield find(s)
-
     def findFred(s: Student3) = new Person3("Fred")
 
-    friends(Array(susan, new Student3("Barney")), findFred)
+    // A unary function has variance Function1[-A, +R]
+    def friends1(students: Array[Student3], find: Function1[Student3, Person3]) =
+      for (s <- students) yield find(s)
+    val person1 = friends1(Array(susan, new Student3("Barney")), findFred)
+    println(person1.mkString("#"))  // com.sandbox.chapter17_TypeParameters.variance.Person3 Fred#com.sandbox.chapter17_TypeParameters.variance.Person3 Fred
+
+    def friends2(students: Array[Student3], find: Student3 => Person3) =
+    for (s <- students) yield find(s)
+    val person2 = friends2(Array(susan, new Student3("Barney")), findFred)
+    println(person2.mkString("#"))  // com.sandbox.chapter17_TypeParameters.variance.Person3 Fred#com.sandbox.chapter17_TypeParameters.variance.Person3 Fred
   }
 }

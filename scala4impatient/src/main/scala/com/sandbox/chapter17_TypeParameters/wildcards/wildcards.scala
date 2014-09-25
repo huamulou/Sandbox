@@ -4,8 +4,6 @@ package com.sandbox.chapter17_TypeParameters.wildcards
  * Created by jin1 on 2014/9/25.
  */
 
-import java.util.Comparator
-
 object wildcards {
 
   def main(args: Array[String]) {
@@ -35,17 +33,15 @@ object wildcards {
     min1(new Pair("Fred", "Wilma"))(sillyHashComp)
 
     // This should work, but it doesn't in Scala 2.9
-    def min2[T <: Comparable[_ >: T]](p: Pair[T]) =
-      if (p.first.compareTo(p.second) < 0) p.first else p.second
+    // def min2[T <: Comparable[_ >: T]](p: Pair[T]) =
+    //  if (p.first.compareTo(p.second) < 0) p.first else p.second
 
     // Here is a workaround
-
     type SuperComparable[T] = Comparable[_ >: T]
     def min3[T <: SuperComparable[T]](p: Pair[T]) =
       if (p.first.compareTo(p.second) < 0) p.first else p.second
 
     // Note that Student <: Comparable[Person]
-
     val anotherFred = new AnotherStudent("Fred")
     val anotherWilma = new AnotherStudent("Wilma")
 

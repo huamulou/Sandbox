@@ -7,9 +7,9 @@ import scala.io.Source
  */
 object readingLines {
   def main(args: Array[String]) {
-    val source1 = Source.fromFile("src/main/mary.txt", "UTF-8")
-    val source2 = Source.fromFile("src/main/mary.txt", "UTF-8")
-    val source3 = Source.fromFile("src/main/mary.txt", "UTF-8")
+    val source1 = Source.fromFile("src/main/resources/mary.txt", "UTF-8")
+    val source2 = Source.fromFile("src/main/resources/mary.txt", "UTF-8")
+    val source3 = Source.fromFile("src/main/resources/mary.txt", "UTF-8")
     try {
       val lineIterator = source1.getLines
 

@@ -7,7 +7,7 @@ import scala.io.Source
  */
 object readingTokensAndNumbers {
   def main(args: Array[String]) {
-    val source = Source.fromFile("src/main/values.txt", "UTF-8")
+    val source = Source.fromFile("src/main/resources/values.txt", "UTF-8")
     val tokens = source.mkString.split("\\s+")
 
     val numbers = tokens.map(_.toDouble)

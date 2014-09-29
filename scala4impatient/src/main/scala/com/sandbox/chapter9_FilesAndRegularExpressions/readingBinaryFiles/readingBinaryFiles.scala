@@ -7,7 +7,7 @@ import java.io._
  */
 object readingBinaryFiles {
   def main(args: Array[String]) {
-    val file = new File("src/main/repl-session.zip")
+    val file = new File("src/main/resources/repl-session.zip")
     val in = new FileInputStream(file)
     val bytes = new Array[Byte](file.length.toInt)
     in.read(bytes)

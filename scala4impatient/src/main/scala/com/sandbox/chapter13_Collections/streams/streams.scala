@@ -18,7 +18,7 @@ object streams {
 
     import scala.io.Source
 
-    val words = Source.fromFile("src/main/mary.txt").getLines.toStream
+    val words = Source.fromFile("src/main/resources/mary.txt").getLines.toStream
     println(words)  // Stream(Mary had a little lamb,, ?)
     println(words(3))  //  And everywhere that Mary went,
     println(words)  //  Stream(Mary had a little lamb,, little lamb, little lamb,, Mary had a little lamb, its fleece was white as snow., And everywhere that Mary went,, ?)

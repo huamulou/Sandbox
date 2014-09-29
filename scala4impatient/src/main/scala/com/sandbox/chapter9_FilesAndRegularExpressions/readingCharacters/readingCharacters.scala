@@ -14,7 +14,7 @@ object readingCharacters {
   }
 
   def main(args: Array[String]) {
-    val source = Source.fromFile("src/main/mary.txt", "UTF-8")
+    val source = Source.fromFile("src/main/resources/mary.txt", "UTF-8")
     val iter = source.buffered
 
     while (iter.hasNext) {

@@ -6,21 +6,21 @@ package com.sandbox.chapter16_XMLProcessing.loadingAndSaving
 object loadingAndSaving {
   def main(args: Array[String]) {
     import scala.xml._
-    val root1 = XML.loadFile("src/main/myfile.xml")
+    val root1 = XML.loadFile("src/main/resources/myfile.xml")
 
     import scala.io.Source
     import java.io._
     import java.net._
-    val root2 = XML.load(new FileInputStream("src/main/myfile.xml"))
+    val root2 = XML.load(new FileInputStream("src/main/resources/myfile.xml"))
     val root3 = XML.load(new InputStreamReader(
-      new FileInputStream("src/main/myfile.xml"), "UTF-8"))
+      new FileInputStream("src/main/resources/myfile.xml"), "UTF-8"))
     // val root4 = XML.load(new URL("http://horstmann.com/index.html"))
     // This may take a while--see Catalog.scala for more information
 
     // The ConstructingParser preserves white space and comments
     import xml.parsing.ConstructingParser
     import java.io.File
-    val parser1 = ConstructingParser.fromFile(new File("src/main/myfile.xml"), preserveWS = true)
+    val parser1 = ConstructingParser.fromFile(new File("src/main/resources/myfile.xml"), preserveWS = true)
     val root5 = parser1.document.docElem
 
 
@@ -53,7 +53,7 @@ object loadingAndSaving {
 
     // Saving
 
-    XML.save("src/main/myfile.xhtml", doc2.docElem,
+    XML.save("src/main/resources/myfile.xhtml", doc2.docElem,
       enc = "UTF-8",
       xmlDecl = true,
       doctype = DocType("html",

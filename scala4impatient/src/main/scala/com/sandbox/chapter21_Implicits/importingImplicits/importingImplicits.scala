@@ -20,10 +20,10 @@ object Fraction {
 }
 
 package com.horstmann.impatient {
-object FractionConversions {
-  implicit def int2Fraction(n: Int) = Fraction(n, 1)
-  implicit def fraction2Double(f: Fraction) = f.num * 1.0 / f.den
-}
+  object FractionConversions {
+    implicit def int2Fraction(n: Int) = Fraction(n, 1)
+    implicit def fraction2Double(f: Fraction) = f.num * 1.0 / f.den
+  }
 }
 
 object importingImplicits {

@@ -20,10 +20,10 @@ object Fraction {
 }
 
 object implicitConversions {
-  implicit def int2Fraction(n: Int) = Fraction(n, 1)
+  implicit def int2Fraction(n: Int) = {println("..............log.................");Fraction(n, 1)}
 
   def main(args: Array[String]) {
-    val result = 3 * Fraction(4, 5) // Calls int2Fraction(3)
+    val result = 3 * Fraction(4, 5) // Calls int2Fraction(3) and print "..............log................." in the console
     println(result)  // 12/5
   }
 }

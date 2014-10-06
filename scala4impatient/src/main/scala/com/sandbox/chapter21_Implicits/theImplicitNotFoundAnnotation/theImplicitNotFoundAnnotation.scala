@@ -18,6 +18,6 @@ object theImplicitNotFoundAnnotation {
       (it.head, it.last)
 
     //Error:(20, 14) I am baffled why you give me String when I want Iterable[A].firstLast("Fred")
-    firstLast("Fred")
+//    firstLast("Fred")
   }
 }
